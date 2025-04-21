@@ -2,6 +2,14 @@
     --Font_color: black;
 }
 
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat", sans-serif;
+    color: var(--Font_color, black);
+}
+
 main ~ nav {
     padding: 1%
 }
@@ -16,13 +24,22 @@ div + h1 {
     margin-top: 1%;
 }
 
-* {
-    margin: auto;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "montserrat", sans-serif;
-    color: var(--Font_color, black);
+h2.h3.header {
+    font-size: large;
+    margin: bottom;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    text-align: left;
 }
+
+.header {
+    text-shadow: #333 1px 1px 2px;
+    font-size: 4em;
+    padding-top: 15%;
+    font-weight: bold;
+}
+
+
 
 hr {
     border: none;
@@ -39,28 +56,6 @@ hr {
     position: static;
 }
 
-@media (max-width: 600px) {
-    .navigation {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .navigation li a {
-        padding: 1em;
-        font-size: 1.2em;
-    }
-    #everything {
-        padding-top: 20rem;
-    }
-}
-
-
-.header {
-    text-shadow: #333 1px 1px 2px;
-    font-size: 4em;
-    padding-top: 15%;
-    font-weight: bold;
-}
-
 .reallist {
     margin-left: 1.5em;
     padding-left: 1em; 
@@ -75,14 +70,6 @@ blockquote:has(strong){
 
 img:active {
     transform: scale(1.1);
-}
-
-h2.h3.header {
-    font-size: large;
-    margin: bottom;
-    padding-top: 2%;
-    padding-bottom: 1%;
-    text-align: left;
 }
 
 .navigation {
@@ -124,10 +111,23 @@ h2.h3.header {
     text-overflow: ellipsis;
 }
 
-
 .navigation li a:hover {
     background-color: hsl(0, 0%, 100%);
     color: rgb(0, 0, 0);
+}
+
+@media (max-width: 600px) {
+    .navigation {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .navigation li a {
+        padding: 1em;
+        font-size: 1.2em;
+    }
+    #everything {
+        padding-top: 20rem;
+    }
 }
 
 /*profile pictures*/
@@ -166,11 +166,6 @@ h2.h3.header {
     margin-bottom: 0.2vh;
 }
 
-footer {
-    background-color: color(colorspace 1 1 0);
-    color: color-mix(in srgb, rgb(0, 0, 0) 50%, white 50%);
-}
-
 .media {
     position: relative;
 }
@@ -188,4 +183,9 @@ footer {
     font-style: italic;
     font-family: "Georgia", serif;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: color(colorspace 1 1 0);
+    color: color-mix(in srgb, rgb(0, 0, 0) 50%, white 50%);
 }
