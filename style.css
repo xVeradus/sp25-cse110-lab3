@@ -111,7 +111,6 @@ img:active {
     text-overflow: ellipsis;
 }
 
-
 .navigation li a:hover {
     background-color: hsl(0, 0%, 100%);
     color: rgb(0, 0, 0);
