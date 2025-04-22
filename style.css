@@ -24,9 +24,9 @@ main ~ nav {
 }
 
 h1 {
-    border: #333 1px solid;
-    & h2 {
-        border: #333 3px solid;
+    border: 1px solid #333;
+    h2 { 
+        border: 3px solid #333;
     }
 }
 
